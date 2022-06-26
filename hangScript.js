@@ -62,6 +62,7 @@ function retry() {
     document.getElementById("win").innerHTML = "";
     document.getElementById("word").style.display = "flex";
     document.getElementById("game").style.visibility = "hidden";
+    document.getElementById("warning").style.visibility = "hidden";
     list.innerHTML = "";
     word.length = 0;
     for (let i = 0; i < images.length; ++i) {
