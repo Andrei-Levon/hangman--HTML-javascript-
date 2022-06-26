@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hangman</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="word">
+            <p>Enter word to start the game:</p>
+            <input type="text" id="game_word">
+            <button id="start" onclick="start_game()">Start game</button>
+            <p id="warning">Insert word</p>
+        </div>
+        <div id="game">
+            <p>Enter letter:</p>
+            <input type="text" id="letter" maxlength="1" value="a">
+            <button id="submit" onclick="submit_letter()">Submit</button>
+            <ul id="guess"></ul>
+            <div id="hangman">
+                <img src="hangman_rope.png" id="rope">
+                <img src="hangman_head.png" id="head">
+                <img src="hangman_torso.png" id="torso">
+                <img src="hangman_larm.png" id="larm">
+                <img src="hangman_rarm.png" id="rarm">
+                <img src="hangman_lleg.png" id="lleg">
+                <img src="hangman_rleg.png" id="rleg">
+            </div>
+            <p id="win"></p>
+            <button id="retry" onclick="retry()">Try new word</button>
+        </div>
+        <script src="hangScript.js"></script>
+    </body>
+</html>

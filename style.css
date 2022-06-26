@@ -1,0 +1,52 @@
+div {
+    height: 300px;
+    margin: 170px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#word {
+    height: 200px;
+}
+
+#game {
+    height: 200px;
+    visibility: hidden;
+}
+
+#warning {
+    visibility: hidden;
+    color: crimson;
+}
+
+#letter {
+    font-size: 29px;
+    width: 23px;
+    border: none;
+    caret-color: crimson;
+}
+
+#letterWarning {
+    visibility: hidden;
+}
+
+li {
+    display: inline;
+    font-size: 30px;
+    color: white;
+    margin-right: 5px;
+    border-bottom: 3px solid black;
+}
+li::selection {
+    color: transparent;
+}
+
+#guess {
+    padding: 0px;
+}
+
+img {
+    position: absolute;
+}
